@@ -1,0 +1,23 @@
+Package: multidvr
+Type: Package
+Title: ML Tests for Effects on Rich Outcomes
+Version: 0.1.0
+Authors@R: person("Diag", "Davenport", email = "diag@uchicago.edu",
+  role = c("aut", "cre"))
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: An implementation and extension of the tests for multiple dependent variables
+    detailed in (Ludwig, Speiss & Mullainathan, 2017), while properly adjusting
+    for multiple comparisons. Functions herein allow users to test for differences
+    in rich DVs with exactly sized hypothesis tests--the family-wise error rate can be
+    perfectly known and controlled. "Rich" outcomes are either rich because there are many of them
+    or because they are non numeric (e.g., free-text responses).
+License: AGPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: 
+  data.table,
+  dplyr,
+  glmnet,
+  magrittr,
+  text2vec
+RoxygenNote: 7.1.0
